@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\SimpleFSA\SimpleFSA.csproj" />
+    </ItemGroup>
+
 </Project>

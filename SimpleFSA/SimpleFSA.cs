@@ -1,44 +1,46 @@
 ﻿namespace KAI;
 
-public class Transition(string message, SimpleState newState)
+public class SimpleTransition(string name, SimpleState to)
 {
-    internal string message = message;
+    public string _name = name;
+    public SimpleState _to = to;
 
-    internal SimpleState newState = newState;
-    
+    public virtual SimpleState Do(SimpleState from)
+    {
+        Console.WriteLine(_to.decription);
+        return _to;
+    }
 }
 
 public class SimpleState(string name,string description)
 {
-    private string name = name;
-    private string decription = description;
-    private Dictionary<string, Transition> transitions;
+    internal string name = name;
+    internal string decription = description;
+    internal Dictionary<string, SimpleTransition> transitions = 
+        new Dictionary<string, SimpleTransition>();
 
-    public void AddTransition(string name,Transition to)
+
+    public virtual void AddTransition(SimpleTransition st)
     {
-        transitions.Add(name, to);
+        transitions.Add(st._name, st);
     }
 
-    public SimpleState DoTransition(string message)
+    public virtual SimpleState DoTransition(string message)
     {
         if (transitions.ContainsKey(message))
         {
-            Transition transition = transitions[message];
-            SimpleState newstate = transition.newState;
-            Console.WriteLine(newstate.decription);
-            return newstate;
+            return transitions[message].Do(this);
         } else 
         { // no change
             return this;
         }
-        
-       
     } 
 }
 
 public class SimpleFSA()
 {
-    private Dictionary<string, SimpleState> stateDictionary;
+    private Dictionary<string, SimpleState> stateDictionary = 
+        new Dictionary<string, SimpleState>();
     private SimpleState currentState = null;
    
     public void AddState(string name, SimpleState state)
