@@ -11,12 +11,16 @@
       "RelativeMoniker": "D:0:0:{FC8F961C-5E95-4FF7-A40C-A343F38AE1F7}|Miner49er\\Miner49er.csproj|solutionrelative:miner49er\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9A81AD0-8114-483C-8975-8F744BD7FAC3}|FSA\\FSA.csproj|c:\\users\\josiah\\source\\repos\\kai\\fsa\\fsa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E9A81AD0-8114-483C-8975-8F744BD7FAC3}|FSA\\FSA.csproj|solutionrelative:fsa\\fsa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{FC8F961C-5E95-4FF7-A40C-A343F38AE1F7}|Miner49er\\Miner49er.csproj|c:\\users\\josiah\\source\\repos\\kai\\miner49er\\miner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8F961C-5E95-4FF7-A40C-A343F38AE1F7}|Miner49er\\Miner49er.csproj|solutionrelative:miner49er\\miner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC8F961C-5E95-4FF7-A40C-A343F38AE1F7}|Miner49er\\Miner49er.csproj|c:\\users\\josiah\\source\\repos\\kai\\miner49er\\miner49er.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{FC8F961C-5E95-4FF7-A40C-A343F38AE1F7}|Miner49er\\Miner49er.csproj|solutionrelative:miner49er\\miner49er.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A81AD0-8114-483C-8975-8F744BD7FAC3}|FSA\\FSA.csproj|c:\\users\\josiah\\source\\repos\\kai\\fsa\\fsa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E9A81AD0-8114-483C-8975-8F744BD7FAC3}|FSA\\FSA.csproj|solutionrelative:fsa\\fsa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,19 +30,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SimpleMiner.cs",
               "DocumentMoniker": "C:\\Users\\Josiah\\source\\repos\\KAI\\Miner49er\\SimpleMiner.cs",
               "RelativeDocumentMoniker": "Miner49er\\SimpleMiner.cs",
-              "ToolTip": "C:\\Users\\Josiah\\source\\repos\\KAI\\Miner49er\\SimpleMiner.cs*",
-              "RelativeToolTip": "Miner49er\\SimpleMiner.cs*",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAuwKUAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Josiah\\source\\repos\\KAI\\Miner49er\\SimpleMiner.cs",
+              "RelativeToolTip": "Miner49er\\SimpleMiner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T20:02:31.792Z",
+              "WhenOpened": "2026-02-18T20:56:25.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Miner.cs",
+              "DocumentMoniker": "C:\\Users\\Josiah\\source\\repos\\KAI\\Miner49er\\Miner.cs",
+              "RelativeDocumentMoniker": "Miner49er\\Miner.cs",
+              "ToolTip": "C:\\Users\\Josiah\\source\\repos\\KAI\\Miner49er\\Miner.cs",
+              "RelativeToolTip": "Miner49er\\Miner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T20:56:21.909Z",
               "EditorCaption": ""
             },
             {
@@ -69,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "FSA",
               "DocumentMoniker": "C:\\Users\\Josiah\\source\\repos\\KAI\\FSA\\FSA.csproj",
               "RelativeDocumentMoniker": "FSA\\FSA.csproj",
