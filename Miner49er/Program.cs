@@ -9,7 +9,7 @@ namespace Miner49er
             Miner miner = new SimpleMiner();
             int secsPerTick = 1;
             Random myRandom = new Random(Environment.TickCount);
-            int gameLengthInTics = (int)(myRandom.NextSingle() * 10) + 10;
+            int gameLengthInTics = 60;
             // run the mineM9er• loop 
             for (int tick = 0; tick < gameLengthInTics; tick++)
             {

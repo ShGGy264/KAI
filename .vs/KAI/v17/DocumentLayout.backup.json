@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Josiah\\source\\repos\\KAI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8F961C-5E95-4FF7-A40C-A343F38AE1F7}|Miner49er\\Miner49er.csproj|c:\\users\\josiah\\source\\repos\\kai\\miner49er\\simpleminer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8F961C-5E95-4FF7-A40C-A343F38AE1F7}|Miner49er\\Miner49er.csproj|solutionrelative:miner49er\\simpleminer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8F961C-5E95-4FF7-A40C-A343F38AE1F7}|Miner49er\\Miner49er.csproj|c:\\users\\josiah\\source\\repos\\kai\\miner49er\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8F961C-5E95-4FF7-A40C-A343F38AE1F7}|Miner49er\\Miner49er.csproj|solutionrelative:miner49er\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A81AD0-8114-483C-8975-8F744BD7FAC3}|FSA\\FSA.csproj|c:\\users\\josiah\\source\\repos\\kai\\fsa\\fsa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E9A81AD0-8114-483C-8975-8F744BD7FAC3}|FSA\\FSA.csproj|solutionrelative:fsa\\fsa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8F961C-5E95-4FF7-A40C-A343F38AE1F7}|Miner49er\\Miner49er.csproj|c:\\users\\josiah\\source\\repos\\kai\\miner49er\\miner49er.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FC8F961C-5E95-4FF7-A40C-A343F38AE1F7}|Miner49er\\Miner49er.csproj|solutionrelative:miner49er\\miner49er.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SimpleMiner.cs",
+              "DocumentMoniker": "C:\\Users\\Josiah\\source\\repos\\KAI\\Miner49er\\SimpleMiner.cs",
+              "RelativeDocumentMoniker": "Miner49er\\SimpleMiner.cs",
+              "ToolTip": "C:\\Users\\Josiah\\source\\repos\\KAI\\Miner49er\\SimpleMiner.cs*",
+              "RelativeToolTip": "Miner49er\\SimpleMiner.cs*",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAIwH4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T20:02:31.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Josiah\\source\\repos\\KAI\\Miner49er\\Program.cs",
+              "RelativeDocumentMoniker": "Miner49er\\Program.cs",
+              "ToolTip": "C:\\Users\\Josiah\\source\\repos\\KAI\\Miner49er\\Program.cs",
+              "RelativeToolTip": "Miner49er\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T20:01:09.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Miner49er",
+              "DocumentMoniker": "C:\\Users\\Josiah\\source\\repos\\KAI\\Miner49er\\Miner49er.csproj",
+              "RelativeDocumentMoniker": "Miner49er\\Miner49er.csproj",
+              "ToolTip": "C:\\Users\\Josiah\\source\\repos\\KAI\\Miner49er\\Miner49er.csproj",
+              "RelativeToolTip": "Miner49er\\Miner49er.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-18T19:56:30.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FSA",
+              "DocumentMoniker": "C:\\Users\\Josiah\\source\\repos\\KAI\\FSA\\FSA.csproj",
+              "RelativeDocumentMoniker": "FSA\\FSA.csproj",
+              "ToolTip": "C:\\Users\\Josiah\\source\\repos\\KAI\\FSA\\FSA.csproj",
+              "RelativeToolTip": "FSA\\FSA.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-18T19:56:07.17Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -14,11 +14,14 @@ namespace Miner49er
         public int thirst = 0;
         /// How many gold nuggets the miner has in the bank ...
         public int bank = 0;
+        /// The Strength of the miners equipment
+        public int gearLevel = 1;
 
-        // The following variables are each oen of the defiend states the miner cna be in.
+        // The following variables are each one of the defiend states the miner cna be in.
         State miningState;
         State drinkingState;
         State bankingState;
+        State shoppingState;
 
         // FIXED: Added : base("SimpleMiner") to resolve the FSAImpl constructor error
         public SimpleMiner() : base("SimpleMiner")
@@ -27,6 +30,7 @@ namespace Miner49er
             miningState = MakeNewState("Mining");
             drinkingState = MakeNewState("Drinking");
             bankingState = MakeNewState("Banking");
+            shoppingState = MakeNewState("Shopping");
 
             // set mining transitions
             miningState.addTransition("tick",
@@ -45,7 +49,11 @@ namespace Miner49er
             drinkingState.addTransition("tick",
                 new ConditionDelegate[] { new ConditionDelegate(this.thirsty) },
                 new ActionDelegate[] { new ActionDelegate(this.takeDrink) }, drinkingState);
-            
+
+            drinkingState.addTransition("tick",
+                new ConditionDelegate[] { new ConditionDelegate(this.pocketsNotEmpty) },
+                new ActionDelegate[] { }, bankingState);
+
             drinkingState.addTransition("tick",
                 new ConditionDelegate[] { },
                 new ActionDelegate[] { new ActionDelegate(this.incrementThirst) }, miningState);
@@ -58,10 +66,27 @@ namespace Miner49er
             bankingState.addTransition("tick",
                 new ConditionDelegate[] { new ConditionDelegate(this.parched) },
                 new ActionDelegate[] { }, drinkingState);
-            
+
+            bankingState.addTransition("tick",
+                new ConditionDelegate[] { new ConditionDelegate(this.wealthy) },
+                new ActionDelegate[] { }, shoppingState);
+
             bankingState.addTransition("tick",
                 new ConditionDelegate[] { },
                 new ActionDelegate[] { }, miningState);
+
+            //set Shopping transitions
+            shoppingState.addTransition("tick",
+                new ConditionDelegate[] { new ConditionDelegate(this.wealthy) },
+                new ActionDelegate[] { new ActionDelegate(this.upgradePickaxe) }, shoppingState);
+
+            shoppingState.addTransition("tick",
+                new ConditionDelegate[] { new ConditionDelegate(this.parched) },
+                new ActionDelegate[] { }, drinkingState);
+
+            shoppingState.addTransition("tick",
+               new ConditionDelegate[] { },
+               new ActionDelegate[] { }, miningState);
 
             // FIXED: Using PascalCase to match your FSAImpl.SetCurrentState method
             SetCurrentState(miningState);
@@ -97,20 +122,31 @@ namespace Miner49er
             bank += 1;
             Console.WriteLine("deposit a gold nugget");
         }
-
+        /// <summary>
+        /// An action that spends some gold in the bank to help the miner gather gold faster. He can hold more and mines gold faster
+        /// </summary>
+        
+        private void upgradePickaxe(FSA fsa)
+        {
+            bank -= gearLevel * 5;
+            gearLevel++;
+            Console.WriteLine("Upgrade Gear to level: " + gearLevel);
+        }
         /// <summary>
         /// This implements the Miner.getCurrentWealth() call ...
         /// </summary>
         public int getCurrentWealth()
         {
-            return bank + gold;
+            return bank + gold + (gearLevel * 5);
         }
 
         // --- Previously extracted methods ---
 
         private void dig(FSA fsa)
         {
-            gold++;
+            gold+= gearLevel;
+            if (gold > 5 * gearLevel )
+                gold = 5* gearLevel; 
             thirst++;
             Console.WriteLine("Miner is digging.");
         }
@@ -120,15 +156,17 @@ namespace Miner49er
             thirst++;
         }
 
-        private Boolean pocketsFull(FSA fsa) => gold >= 5;
+        private Boolean pocketsFull(FSA fsa) => gold >= (5 * gearLevel);
 
         private Boolean pocketsNotEmpty(FSA fsa) => gold > 0;
 
-        private Boolean thirsty(FSA fsa) => thirst > 0;
+        private Boolean thirsty(FSA fsa) => thirst > 5;
+
+        private Boolean wealthy(FSA fsa) => bank >= (5 * gearLevel);
 
         public void printStatus()
         {
-            Console.WriteLine("Thirst: "+thirst+" Gold: "+gold+" Bank: "+bank);
+            Console.WriteLine("Thirst: "+thirst+" Gold: "+gold+" Bank: "+bank+" Pickaxe: "+gearLevel);
         }
     }
 }
